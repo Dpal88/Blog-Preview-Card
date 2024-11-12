@@ -1,0 +1,52 @@
+:root {
+    --yellow: rgba(244, 208, 78, 1);
+    --grey-950: rgba(17, 17, 17, 1);
+    --grey-500: rgba(107, 107, 107, 1);
+    --white: #fff;
+
+    --spacing-50: 0.25rem;
+    --spacing-100: 0.50rem;
+    --spacing-150: 0.75rem;
+    --spacing-300: 1.5rem;
+
+    --font-S: 500 1rem / 150% 'Figtree', sans-serif;
+    --font-M: 500 0.875rem / 150% 'Figtree', sans-serif;
+    --font-M-Bold: 800 0.875rem / 150% 'Figtree', sans-serif;
+    --font-L-Bold: 800 1.5rem / 150% 'Figtree', sans-serif;
+
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ------- main ------- */
+
+
+
+/* ------- footer ------- */
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
