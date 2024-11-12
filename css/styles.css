@@ -7,12 +7,16 @@
     --spacing-50: 0.25rem;
     --spacing-100: 0.50rem;
     --spacing-150: 0.75rem;
+    --spacing-200: 1rem;
     --spacing-300: 1.5rem;
 
-    --font-S: 500 1rem / 150% 'Figtree', sans-serif;
+    --font-S: 500 0.75rem / 150% 'Figtree', sans-serif;
+    --font-S-Bold: 800 0.75rem / 150% 'Figtree', sans-serif;
     --font-M: 500 0.875rem / 150% 'Figtree', sans-serif;
     --font-M-Bold: 800 0.875rem / 150% 'Figtree', sans-serif;
-    --font-L-Bold: 800 1.5rem / 150% 'Figtree', sans-serif;
+    --font-L: 500 1rem / 150% 'Figtree', sans-serif;
+    --font-XL-Bold: 800 1.25rem / 150% 'Figtree', sans-serif;
+    --font-XXL-Bold: 800 1.5rem / 150% 'Figtree', sans-serif;
 
 }
 
@@ -38,12 +42,92 @@ img {
 }
 
 /* ------- main ------- */
+.container {
+    background: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 9.75rem 1.5rem 9.69rem;
 
+    .card {
+        background: var(--white);
+        box-shadow: 8px 8px 0px 0px #000;
+        max-width: 24rem;
+        padding: var(--spacing-200) var(--spacing-300);
+        border: 1px solid var(--grey-950);
+        border-radius: 1.25rem;
+
+        position: relative;
+
+        .img-wrapper {
+
+            img {
+                border-radius: 0.625rem;
+            }
+        }
+
+        .main-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-150);
+            margin-top: var(--spacing-200);
+
+            span {
+                color: var(--grey-950);
+                background: var(--yellow);
+                font: var(--font-S-Bold);
+                width: fit-content;
+                padding: var(--spacing-50, 0.25rem) var(--spacing-150, 0.75rem);
+                border-radius: var(--spacing-50);
+            }
+
+            .published-date {
+                color: var(--grey-950);
+                font: var(--font-S);
+            }
+
+            h1 {
+                color: var(--grey-950);
+                font: var(--font-XL-Bold);
+            }
+            h1:hover {
+                color: var(--yellow);
+                cursor: pointer;
+            }
+
+            .main-text {
+                color: var(--grey-500);
+                font: var(--font-M);
+            }
+        }
+
+        .author-wrapper {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-150);
+            margin-top: var(--spacing-200);
+
+            img {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            h2 {
+                color: var(--grey-950);
+                font: var(--font-M-Bold);
+            }
+        }
+    }
+}
 
 
 /* ------- footer ------- */
 
 .attribution { 
+    position: absolute;
+    bottom: -40px;
+    left: 15%;
     font-size: 11px;
     text-align: center; 
 }
