@@ -101,6 +101,12 @@ img {
                     width: fit-content;
                     padding: var(--spacing-50, 0.25rem) var(--spacing-150, 0.75rem);
                     border-radius: var(--spacing-50);
+
+                    transition: transform .2s ease-in-out;
+                }
+                span:hover {
+                    transform: scale(1.10);
+                    cursor: pointer;
                 }
     
                 .published-date {
@@ -111,6 +117,7 @@ img {
                 h1 {
                     color: var(--grey-950);
                     font: var(--font-XL-Bold);
+                    transition: color .2s ease-in-out;
                 }
                 h1:hover {
                     color: var(--yellow);
@@ -132,6 +139,10 @@ img {
                 img {
                     width: 2rem;
                     height: 2rem;
+                    transition: transform .2s ease-in-out;
+                }
+                img:hover {
+                    transform: scale(1.20);
                 }
     
                 h2 {
@@ -184,3 +195,34 @@ img {
 }
 
 /* ------- media queries ------- */
+
+/* 768px = 48rem */
+@media (width > 48rem) {
+    .container {
+
+        .inner-wrapper {
+
+            .card {
+
+                .main-text-wrapper {
+
+                    span {
+                        font: var(--font-M-Bold);
+                    }
+
+                    .published-date {
+                        font: var(--font-M);
+                    }
+
+                    h1 {
+                        font: var(--font-XXL-Bold);
+                    }
+
+                    .main-text {
+                        font: var(--font-L);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -63,6 +63,7 @@ button.addEventListener('mouseover', () => {
     button.style.color = `${randomColor}`;
     button.style.background = `${compColor}`;
 })
+
 button.addEventListener('mouseout', () => {
     button.style.color = '#000';
     button.style.background = '#fff';
