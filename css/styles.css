@@ -15,6 +15,7 @@
     --font-M: 500 0.875rem / 150% 'Figtree', sans-serif;
     --font-M-Bold: 800 0.875rem / 150% 'Figtree', sans-serif;
     --font-L: 500 1rem / 150% 'Figtree', sans-serif;
+    --font-L-Bold: 800 1rem / 150% 'Figtree', sans-serif;
     --font-XL-Bold: 800 1.25rem / 150% 'Figtree', sans-serif;
     --font-XXL-Bold: 800 1.5rem / 150% 'Figtree', sans-serif;
 
@@ -94,17 +95,17 @@ img {
                 gap: var(--spacing-150);
                 margin-top: var(--spacing-200);
     
-                span {
+                h1 {
                     color: var(--grey-950);
                     background: var(--yellow);
-                    font: var(--font-S-Bold);
+                    font: var(--font-M-Bold);
                     width: fit-content;
                     padding: var(--spacing-50, 0.25rem) var(--spacing-150, 0.75rem);
                     border-radius: var(--spacing-50);
 
                     transition: transform .2s ease-in-out;
                 }
-                span:hover {
+                h1:hover {
                     transform: scale(1.10);
                     cursor: pointer;
                 }
@@ -114,12 +115,12 @@ img {
                     font: var(--font-S);
                 }
     
-                h1 {
+                h2 {
                     color: var(--grey-950);
                     font: var(--font-XL-Bold);
                     transition: color .2s ease-in-out;
                 }
-                h1:hover {
+                h2:hover {
                     color: var(--yellow);
                     cursor: pointer;
                 }
@@ -145,7 +146,7 @@ img {
                     transform: scale(1.20);
                 }
     
-                h2 {
+                h3 {
                     color: var(--grey-950);
                     font: var(--font-M-Bold);
                 }
@@ -206,15 +207,15 @@ img {
 
                 .main-text-wrapper {
 
-                    span {
-                        font: var(--font-M-Bold);
+                    h1 {
+                        font: var(--font-L-Bold);
                     }
 
                     .published-date {
                         font: var(--font-M);
                     }
 
-                    h1 {
+                    h2 {
                         font: var(--font-XXL-Bold);
                     }
 

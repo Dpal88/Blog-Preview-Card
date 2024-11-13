@@ -1,5 +1,5 @@
 const button = document.querySelector('#click-me');
-const h1 = document.querySelector('h1');
+const h2 = document.querySelector('h2');
 const anchors = document.querySelectorAll('.attribution a');
 
 // randomColor will hold the value of the random generated color
@@ -55,10 +55,14 @@ button.addEventListener('click', e => {
     console.log(compColor);
     console.log(randomColor);
 
+    // button.style.color = `${randomColor}`;
+    // button.style.background = `${compColor}`;
+
 })
 
 // button.addEventListener('mouseover', () => button.style.color = `${compColor}`);
 // button.addEventListener('mouseout', () => button.style.color = '#000');
+
 button.addEventListener('mouseover', () => {
     button.style.color = `${randomColor}`;
     button.style.background = `${compColor}`;
@@ -69,8 +73,8 @@ button.addEventListener('mouseout', () => {
     button.style.background = '#fff';
 })
 
-h1.addEventListener('mouseover', () => h1.style.color = `${randomColor}`);
-h1.addEventListener('mouseout', () => h1.style.color = 'var(--grey-950)');
+h2.addEventListener('mouseover', () => h2.style.color = `${randomColor}`);
+h2.addEventListener('mouseout', () => h2.style.color = 'var(--grey-950)');
 
 
 
@@ -80,5 +84,3 @@ anchors.forEach( (a) => {
     a.addEventListener('mouseout', () => a.style.color = `${compColor}`);
 
 })
-
-// save to local storage
